@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login page</title>
+    <script src="2.js"></script>
+    <style>
+      html,
+      body {
+        margin: 0;
+      }
+      .my {
+        background: url("https://picsum.photos/id/1020/1200/1400");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="height: 100vh; display: flex; flex-direction: column;">
+      <div style="flex: 1;">a</div>
+      <div
+        style="
+          flex: 8;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+        "
+      >
+        <div style="flex: 1;">e</div>
+
+        <div style="flex: 8; display: flex; background: teal; height: 400px;">
+          <!-- login box-->
+          <div
+            style="
+              flex: 6;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+            "
+          >
+            <div style="flex: 2;">
+              <h1><b>Login</b></h1>
+            </div>
+            <!--to get all io box-->
+            <div>
+              <div style="flex: 8; flex-direction: column;">
+                <div>
+                  <input
+                    onclick="mail(this)"
+                    type="text"
+                    placeholder="Email id...!"
+                  />
+                </div>
+                <div>
+                  <input
+                    onclick="pass(this)"
+                    type="password"
+                    placeholder="Password"
+                  />
+                </div>
+                <div><button onclick="btn(this)">Login</button></div>
+              </div>
+              <div>login read</div>
+              <div>pass read</div>
+            </div>
+            <!--right image-->
+          </div>
+          <div style="flex: 4;" class="my"></div>
+        </div>
+        <div style="flex: 1;"></div>
+      </div>
+      <div style="flex: 1;"></div>
+    </div>
+  </body>
+</html>
